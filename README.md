@@ -1,9 +1,5 @@
-'''package main
-
-import (
-	"fmt"
-)
-
+<pre>
+```go
 type Attributes struct{}
 
 func (a Attributes) Contact() string {
@@ -11,20 +7,20 @@ func (a Attributes) Contact() string {
 	return instagram
 }
 
-func (a Attributes) Life() (string, int) {
+func (a Attributes) Life() ([]string, int) {
 	language := []string{"French", "English"}
 	age := 16
 	return language, age
 }
 
 func (a Attributes) Coding() (map[string][]string, []string, []string) {
-	languages := map[string][]string{
-		"intermediate": []string{"python", "js"},
-		"learning":     []string{"go"},
+	language := map[string][]string{
+		"intermediate": {"python", "js"},
+		"learning":     {"go"},
 	}
 	specialities := []string{"pentest", "fullstack"}
 	environnement := []string{"vscode", "sublime text maybe"}
-	return languages, specialities, environnement
+	return language, specialities, environnement
 }
 
 func main() {
@@ -33,4 +29,5 @@ func main() {
 	fmt.Println(attributes.Life())
 	fmt.Println(attributes.Coding())
 }
-'''
+```
+</pre>
