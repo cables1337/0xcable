@@ -1,4 +1,4 @@
-package main
+'''package main
 
 import (
 	"fmt"
@@ -33,4 +33,4 @@ func main() {
 	fmt.Println(attributes.Life())
 	fmt.Println(attributes.Coding())
 }
-
+'''
